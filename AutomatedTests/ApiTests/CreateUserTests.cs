@@ -7,6 +7,7 @@ namespace AutomatedTests.ApiTests
     public class CreateUserTests
     {
         [Fact]
+        //Create user happy flow success status code 201
         public async void CreateUser_HappyFlow_SuccessStatusCode201()
         {
             var user = new User
@@ -20,6 +21,7 @@ namespace AutomatedTests.ApiTests
         }
         
         [Fact]
+        //Create user no age no name status code 400
         public async void CreateUser_NoAgeNoName_StatusCode400()
         {
             var user = new User();
@@ -29,6 +31,7 @@ namespace AutomatedTests.ApiTests
         
         
         [Fact]
+        //Create user no age status code 400
         public async void CreateUser_NoAge_StatusCode400()
         {
             var user = new User
@@ -40,6 +43,7 @@ namespace AutomatedTests.ApiTests
         }
         
         [Fact]
+        //Create user no name status code 400
         public async void CreateUser_NoName_StatusCode400()
         {
             var user = new User

@@ -7,6 +7,7 @@ namespace AutomatedTests.Utils
 {
     public class TestUtils
     {
+        //Assert Exception Http Status Code
         public static async Task AssertExceptionHttpStatusCode(Func<Task> testCode, int statusCode)
         {
             var exception = await Record.ExceptionAsync(testCode);

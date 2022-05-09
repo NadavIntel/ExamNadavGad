@@ -7,6 +7,7 @@ namespace AutomatedTests.ApiTests
     public class UpdateUserTests
     {
         [Fact]
+        //Update user existing user success code 200
         public async void UpdateUser_ExistingUser_SuccessCode200()
         {
             var user = new User
@@ -22,6 +23,7 @@ namespace AutomatedTests.ApiTests
         }
         
         [Fact]
+        //Update User_Non existing user HttpError404
         public async void UpdateUser_NonExistingUser_HttpError404()
         {
             var user = new User
